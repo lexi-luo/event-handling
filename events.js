@@ -27,15 +27,13 @@
 	  // Finally, we add one to make the colour white again
 	  one.addEventListener('mouseleave', makeWhite)
 	}
-	
+
 	function two () {
-	
-	  var two = document.getElementById('two')
-	
-	  two.addEventListener('mouseenter', makeGreen)
-	
-	  two.addEventListener('mouseleave', makeWhite)
-	}  
+		var two = document.getElementById("two")
+		two.addEventListener("mouseenter", makeGreen)
+		two.addEventListener("mouseleave", makeWhite)
+	}
+
 	
 	function three () {
 	
@@ -50,7 +48,7 @@
 	
 	  var four = document.getElementById('four')
 	 
-	  four.addEventListener('click', makePurple)
+	  four.addEventListener('click', makeYellow)
 	}
 	  
 	
@@ -64,13 +62,18 @@
 	function makeWhite (evt) {
 	  evt.target.style.backgroundColor = 'white'
 	}
+
+	function makeGreen (evt) {
+	  evt.target.style.backgroundColor = 'green'
+	}
+	
 	
 	function makeRed (evt) {
 	  evt.target.style.backgroundColor = 'red'
 	}
 	
-	function makePurple (evt) {
-	  evt.target.style.backgroundColor = 'purple'
+	function makeYellow (evt) {
+	  evt.target.style.backgroundColor = 'yellow'
 	}
 
  
